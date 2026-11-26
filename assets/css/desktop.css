@@ -1,0 +1,131 @@
+/* =========================================================
+   DESKTOP ONLY — semua aturan di dalam media query ini.
+   Layar < 1024px (mobile/tablet) tidak terpengaruh.
+   ========================================================= */
+@media (min-width: 1024px) {
+
+  /* ---------- Container & spacing ---------- */
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 48px;
+  }
+
+  .section {
+    padding-block: 120px;
+  }
+
+  .section__title {
+    font-size: clamp(2.2rem, 3.2vw, 3.2rem);
+  }
+
+  /* ---------- Header & navigasi ---------- */
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    position: static;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* ---------- Hero: dua kolom ---------- */
+  .hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 64px;
+    align-items: center;
+    min-height: 85vh;
+  }
+
+  .hero__title {
+    font-size: clamp(3rem, 4.6vw, 4.5rem);
+    line-height: 1.05;
+  }
+
+  .hero__cta {
+    display: flex;
+    gap: 16px;
+  }
+
+  /* ---------- Showcase 3D: dua kolom ---------- */
+  .showcase {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 48px;
+    align-items: start;
+  }
+
+  .stage__viewport,
+  .viewer {
+    min-height: 560px;
+  }
+
+  .panel {
+    position: sticky;
+    top: 120px;
+  }
+
+  /* ---------- Ledge (karya) ---------- */
+  .ledge__viewport {
+    min-height: 520px;
+  }
+
+  /* ---------- About: foto + teks ---------- */
+  .about {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    gap: 64px;
+    align-items: center;
+  }
+
+  /* ---------- Toolkit: 4 kolom ---------- */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact {
+    text-align: center;
+    padding-block: 80px;
+  }
+
+  .contact__actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------- Footer ---------- */
+  .foot__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .foot__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

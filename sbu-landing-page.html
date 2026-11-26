@@ -1,0 +1,3751 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#48477f">
+  <meta name="description"
+    content="Sahabat Bangun Usaha — partner maklon makanan untuk membantu Anda membangun brand sendiri, mulai dari formulasi, produksi, kemasan, hingga legalitas.">
+  <title>SBU — Sahabat Bangun Usaha | Partner Maklon Makanan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      --navy: #48477f;
+      --navy-2: #5a5990;
+      --red: #e33d30;
+      --ink: #464579;
+      --muted: #77779a;
+      --soft: #f1f1f3;
+      --soft-2: #e9e9ed;
+      --white: #fff;
+      --shadow: 0 18px 55px rgba(45, 43, 91, .10);
+      --radius: 22px;
+      --max: 1200px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--ink);
+      font-family: 'Poppins', Arial, sans-serif;
+      line-height: 1.55;
+      overflow-x: hidden
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      font: inherit
+    }
+
+    .topline {
+      height: 7px;
+      background: var(--navy)
+    }
+
+    /* ================= HEADER ================= */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(246, 246, 247, .96);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 3px 18px rgba(37, 37, 75, .06)
+    }
+
+    .nav-wrap {
+      width: min(var(--max), calc(100% - 48px));
+      height: 82px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      flex-shrink: 0;
+      min-width: 0
+    }
+
+    .brand-logo {
+      width: 78px;
+      height: 52px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      mix-blend-mode: multiply
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.12;
+      white-space: nowrap
+    }
+
+    .brand-name {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -.035em;
+      color: var(--navy)
+    }
+
+    .brand-tagline {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--red);
+      margin-top: 3px
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #4b4a7d
+    }
+
+    .nav-links a {
+      transition: color .2s ease
+    }
+
+    .nav-links a:hover {
+      color: var(--red)
+    }
+
+    .menu-toggle {
+      display: none;
+      background: var(--navy);
+      border: 0;
+      color: #fff;
+      border-radius: 10px;
+      width: 43px;
+      height: 43px;
+      cursor: pointer;
+      font-size: 22px
+    }
+
+    /* ================= BASE ================= */
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto
+    }
+
+    .section {
+      padding: 105px 0;
+      position: relative
+    }
+
+    .section-sm {
+      padding: 75px 0
+    }
+
+    .eyebrow {
+      font-size: 15px;
+      color: var(--red);
+      font-weight: 500;
+      margin: 0 0 8px
+    }
+
+    .heading {
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0
+    }
+
+    .heading .red {
+      color: var(--red)
+    }
+
+    .section-copy {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #5e5d87;
+      max-width: 680px;
+      margin: 18px 0 0
+    }
+
+    .pill-title {
+      display: inline-flex;
+      background: var(--navy);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: 800;
+      margin: 26px 0 18px
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      padding: 56px 0 40px;
+      overflow: hidden
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.03fr .97fr;
+      align-items: center;
+      gap: 40px
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2
+    }
+
+    .hero .eyebrow {
+      font-size: 21px;
+      margin-bottom: 14px
+    }
+
+    .hero h1 {
+      font-size: clamp(44px, 5.4vw, 76px);
+      line-height: .99;
+      letter-spacing: -.055em;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0
+    }
+
+    .hero h1 span {
+      display: block
+    }
+
+    .hero h1 .red {
+      color: var(--red)
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      line-height: 1.75;
+      max-width: 620px;
+      color: #5b5a85;
+      margin: 25px 0 0
+    }
+
+    .hero-visual {
+      position: relative;
+      min-width: 0;
+      display: flex;
+      justify-content: center;
+      isolation: isolate
+    }
+
+    .hero-visual:before {
+      content: "";
+      position: absolute;
+      width: 78%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(72, 71, 127, .10), transparent 68%);
+      left: 11%;
+      top: 8%;
+      z-index: -1
+    }
+
+    .hero-visual img {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      filter: drop-shadow(0 18px 22px rgba(38, 36, 76, .11));
+      user-select: none;
+      pointer-events: none
+    }
+
+    .hero-proof {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 8px
+    }
+
+    .proof-card {
+      border: 1.5px solid var(--navy);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      min-height: 80px;
+      background: white
+    }
+
+    .proof-icon {
+      height: 46px;
+      width: 46px;
+      flex: 0 0 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--red);
+      color: white;
+      font-size: 19px;
+      font-weight: 700
+    }
+
+    .proof-card strong {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+      line-height: 1.25;
+      text-transform: uppercase
+    }
+
+    .proof-card small {
+      display: block;
+      color: #77769b;
+      font-size: 12px;
+      line-height: 1.3;
+      margin-top: 4px
+    }
+
+    /* ================= INVESTMENT ================= */
+    .investment {
+      padding: 22px 0 20px;
+      text-align: center
+    }
+
+    .investment h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1;
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-weight: 900
+    }
+
+    .price-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--navy);
+      border-radius: 20px;
+      overflow: hidden;
+      color: white;
+      box-shadow: var(--shadow)
+    }
+
+    .old-price {
+      padding: 17px 30px;
+      font-size: clamp(32px, 5vw, 59px);
+      font-weight: 900;
+      position: relative;
+      line-height: 1
+    }
+
+    .old-price:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      background: var(--red);
+      left: 8%;
+      right: 8%;
+      top: 50%
+    }
+
+    .new-price {
+      background: var(--red);
+      padding: 18px 32px;
+      font-size: clamp(38px, 5.3vw, 64px);
+      line-height: 1;
+      font-weight: 900;
+      border-radius: 18px;
+      white-space: nowrap;
+      text-shadow: 2px 2px 0 var(--navy), -2px -2px 0 var(--navy), 2px -2px 0 var(--navy), -2px 2px 0 var(--navy)
+    }
+
+    .investment h3 {
+      margin: 14px 0 0;
+      font-size: clamp(24px, 3.6vw, 42px);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.1
+    }
+
+    .investment p {
+      margin: 8px 0 0;
+      color: #66658d;
+      font-size: 17px
+    }
+
+    .investment p b {
+      color: var(--red)
+    }
+
+    /* ================= FACTORY BANNER ================= */
+    .factory-banner {
+      position: relative;
+      margin-top: 75px;
+      overflow: hidden;
+      border-radius: 2px;
+      min-height: 350px;
+      background: var(--navy)
+    }
+
+    .factory-banner img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .72
+    }
+
+    .factory-banner:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(41, 40, 91, .83), rgba(41, 40, 91, .22))
+    }
+
+    .factory-banner-content {
+      position: relative;
+      z-index: 2;
+      min-height: 350px;
+      padding: 55px 7%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      color: white;
+      max-width: 750px
+    }
+
+    .label-white {
+      background: #fff;
+      color: var(--navy);
+      font-weight: 900;
+      font-size: 20px;
+      padding: 9px 22px;
+      border-radius: 12px;
+      margin-bottom: 18px
+    }
+
+    .label-white span {
+      color: var(--red)
+    }
+
+    .factory-banner h2 {
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.1;
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: -.04em
+    }
+
+    /* ================= ABOUT ================= */
+    .about-grid {
+      display: grid;
+      grid-template-columns: .94fr 1.06fr;
+      gap: 70px;
+      align-items: center
+    }
+
+    .about-copy p {
+      font-size: 16px;
+      color: #5f5e87;
+      line-height: 1.8;
+      margin: 20px 0 0
+    }
+
+    .why-list {
+      display: grid;
+      gap: 13px
+    }
+
+    .why-card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 15px 18px;
+      border: 2px solid var(--navy);
+      border-radius: 18px;
+      background: #fff
+    }
+
+    .why-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--red);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      flex: 0 0 58px;
+      font-size: 25px
+    }
+
+    .why-card strong {
+      font-size: 16px;
+      color: var(--navy);
+      line-height: 1.3;
+      display: block
+    }
+
+    .why-card p {
+      margin: 3px 0 0;
+      font-size: 14px;
+      color: #6b6a91;
+      line-height: 1.4
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1.5px solid var(--navy);
+      border-radius: 16px;
+      margin-top: 38px;
+      padding: 19px 15px;
+      gap: 10px
+    }
+
+    .stat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px
+    }
+
+    .stat-icon {
+      background: var(--navy);
+      color: white;
+      border-radius: 50%;
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      flex-shrink: 0
+    }
+
+    .stat b {
+      display: block;
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.1
+    }
+
+    .stat small {
+      display: block;
+      color: #77769a;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.25;
+      text-transform: uppercase;
+      margin-top: 4px
+    }
+
+    .quote {
+      font-size: clamp(18px, 2vw, 25px);
+      line-height: 1.45;
+      font-style: italic;
+      color: var(--navy);
+      text-align: center;
+      max-width: 850px;
+      margin: 34px auto 0
+    }
+
+    .quote b {
+      color: var(--red)
+    }
+
+    /* ================= VISION & MISSION ================= */
+    .vision>div {
+      width: 100%;
+      max-width: 760px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+    }
+
+    .vision {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 70px;
+      align-items: start;
+      margin-top: 85px
+    }
+
+    .vision-intro .heading {
+      font-size: clamp(42px, 5vw, 65px)
+    }
+
+    .vision-intro p {
+      color: #66658d;
+      font-size: 16px;
+      line-height: 1.7
+    }
+
+    .mission-title {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: -.02em;
+      margin: 0 0 14px
+    }
+
+    .mission-card {
+      background: var(--soft);
+      border-radius: 22px;
+      padding: 22px 26px
+    }
+
+    .spiritual-card {
+      margin-bottom: 34px
+    }
+
+    .business-card {
+      display: flex;
+      flex-direction: column;
+      gap: 18px
+    }
+
+    .mission-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      width: 100%
+    }
+
+    .mission-icon {
+      width: 76px;
+      height: 76px;
+      min-width: 76px;
+      border-radius: 50%;
+      background: #4b4b85;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0
+    }
+
+    .proof-icon svg,
+    .why-icon svg,
+    .stat-icon svg,
+    .service-icon svg,
+    .option-icon svg {
+      width: 52%;
+      height: 52%;
+      display: block
+    }
+
+    .mission-icon img,
+    .mission-icon svg {
+      width: 50%;
+      height: 50%;
+      object-fit: contain
+    }
+
+    .mission-text {
+      flex: 1;
+      min-width: 0;
+      font-size: 16px;
+      line-height: 1.45;
+      color: #4b4b85;
+      margin: 0
+    }
+
+    /* ================= SERVICES ================= */
+    .service-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 40px
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px
+    }
+
+    .service-card {
+      background: var(--soft);
+      border-radius: 22px;
+      padding: 27px 25px;
+      min-height: 215px;
+      transition: transform .25s, box-shadow .25s
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow)
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      margin-bottom: 17px
+    }
+
+    .service-card h3 {
+      font-size: 17px;
+      color: var(--navy);
+      margin: 0 0 7px;
+      font-weight: 900;
+      line-height: 1.35
+    }
+
+    .service-card p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #66658b
+    }
+
+    /* ================= LEGALITAS ================= */
+    .legal-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 55px;
+      align-items: center
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch
+    }
+
+    .certificate {
+      padding: 8px;
+      background: white;
+      border: 3px solid var(--navy);
+      border-radius: 20px;
+      box-shadow: 5px 5px 0 var(--red);
+      overflow: hidden
+    }
+
+    .certificate img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 10px
+    }
+
+    .legal-points {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px
+    }
+
+    .legal-point {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      background: var(--soft);
+      padding: 16px 19px;
+      border-radius: 17px
+    }
+
+    .legal-point .service-icon {
+      margin: 0;
+      flex: 0 0 51px;
+      width: 51px;
+      height: 51px;
+      font-size: 21px
+    }
+
+    .legal-point strong {
+      display: block;
+      color: var(--navy);
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 1.3
+    }
+
+    .legal-point p {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: #66658a;
+      line-height: 1.45
+    }
+
+    .legal-quote {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: var(--navy)
+    }
+
+    /* ================= PACKSHOT (KEMASAN) ================= */
+    .packshot-section {
+      padding: 110px 0;
+      background: #ffffff;
+      overflow: hidden
+    }
+
+    .packshot-heading {
+      margin-bottom: 20px
+    }
+
+    .packshot-heading h2 {
+      font-size: clamp(36px, 5vw, 64px);
+      line-height: 1.05;
+      font-weight: 900;
+      color: var(--navy);
+      margin: 0 0 16px;
+      text-transform: uppercase;
+      letter-spacing: -.04em
+    }
+
+    .packshot-heading h2 span {
+      display: block;
+      color: var(--red)
+    }
+
+    .packshot-heading p {
+      max-width: 620px;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #5e5d87;
+      margin: 0
+    }
+
+    .packshot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px 40px;
+      margin-top: 70px
+    }
+
+    .packshot-card {
+      position: relative;
+      padding: 64px 30px 26px;
+      background: var(--soft);
+      border-radius: 22px
+    }
+
+    .packshot-category {
+      position: absolute;
+      z-index: 4;
+      top: -24px;
+      left: 30px;
+      padding: 4px 18px;
+      background: var(--soft);
+      border-radius: 13px;
+      font-size: clamp(24px, 2.6vw, 36px);
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--navy)
+    }
+
+    .packshot-visual {
+      position: relative;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    .packshot-accent {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 62%;
+      background: var(--navy);
+      border-radius: 15px
+    }
+
+    .packshot-image {
+      position: relative;
+      z-index: 2;
+      width: 88%;
+      max-width: 520px;
+      height: 270px;
+      object-fit: contain;
+      margin-top: -10px
+    }
+
+    .packshot-info {
+      padding: 18px 6px 0;
+      color: var(--navy)
+    }
+
+    .packshot-info h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0
+    }
+
+    .packshot-type {
+      display: block;
+      font-size: 16px;
+      font-style: italic;
+      margin-top: 2px
+    }
+
+    .packshot-info>p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 10px 0 18px;
+      color: #5e5d87
+    }
+
+    .packshot-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .packshot-option {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy)
+    }
+
+    .option-icon {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--navy);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 22px
+    }
+
+    .packshot-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: var(--navy);
+      color: #ffffff;
+      padding: 18px 16px;
+      border-radius: 14px;
+      margin-top: 24px
+    }
+
+    .packshot-feature {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 4px 14px;
+      min-width: 0
+    }
+
+    .packshot-feature+.packshot-feature {
+      border-left: 2px solid rgba(255, 255, 255, .8)
+    }
+
+    .packshot-feature>i {
+      font-size: 28px
+    }
+
+    .packshot-feature div {
+      display: flex;
+      flex-direction: column;
+      gap: 3px
+    }
+
+    .packshot-feature strong {
+      font-size: 15px;
+      font-weight: 800
+    }
+
+    .packshot-feature small {
+      font-size: 12px;
+      line-height: 1.35
+    }
+
+    /* ================= PRODUK ================= */
+    .product-section {
+      background: #fff
+    }
+
+    .product-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0 10px
+    }
+
+    .product-meta span {
+      background: var(--soft);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-size: 12px;
+      color: var(--navy);
+      font-weight: 700
+    }
+
+    .product-group {
+      margin-top: 56px
+    }
+
+    .product-group h3 {
+      font-size: clamp(28px, 4vw, 42px);
+      color: var(--navy);
+      font-weight: 900;
+      letter-spacing: -.04em;
+      margin: 0 0 20px
+    }
+
+    .food-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px
+    }
+
+    .food-card {
+      display: flex;
+      align-items: center;
+      min-height: 165px;
+      background: var(--soft);
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      padding: 16px 0 16px 19px;
+      transition: transform .2s, box-shadow .2s
+    }
+
+    .food-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow)
+    }
+
+    .food-info {
+      position: relative;
+      z-index: 2;
+      width: 65%;
+      padding-right: 3px
+    }
+
+    .food-no {
+      display: inline-grid;
+      place-items: center;
+      background: var(--red);
+      color: #fff;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 900;
+      margin-right: 6px;
+      vertical-align: 2px
+    }
+
+    .food-card h4 {
+      display: inline;
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin: 0
+    }
+
+    .food-card p {
+      margin: 8px 0 0 31px;
+      font-size: 11px;
+      line-height: 1.45;
+      color: #65648b
+    }
+
+    .food-card p em {
+      font-weight: 600
+    }
+
+    .food-photo {
+      position: absolute;
+      right: -4px;
+      bottom: 0;
+      width: 42%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      pointer-events: none
+    }
+
+    .food-photo img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: right bottom;
+      mix-blend-mode: multiply
+    }
+
+    /* ================= GALERI ================= */
+    .raw-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 30px
+    }
+
+    .raw-gallery img {
+      width: 100%;
+      height: 205px;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 4px solid var(--soft);
+      transition: transform .25s;
+      cursor: zoom-in
+    }
+
+    .raw-gallery img:hover {
+      transform: scale(1.025)
+    }
+
+    .gallery-label {
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 900;
+      color: var(--navy);
+      margin: 35px 0 10px
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+      border-radius: 23px;
+      border: 4px solid var(--soft);
+      transition: transform .25s, box-shadow .25s;
+      cursor: zoom-in
+    }
+
+    .photo-grid img:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow)
+    }
+
+    /* ================= KLIEN & TESTIMONI ================= */
+    .client-area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center
+    }
+
+    .client-area>* {
+      min-width: 0
+    }
+
+    .client-card {
+      background: var(--soft);
+      padding: 22px;
+      border-radius: 44px;
+      width: 100%;
+      max-width: 520px;
+      margin: 25px auto 0;
+      text-align: center
+    }
+
+    .client-viewport {
+      overflow: hidden;
+      border: 2px solid rgba(72, 71, 127, .7);
+      border-radius: 30px;
+      background: #f2f2f3;
+      cursor: grab;
+      touch-action: pan-y;
+      user-select: none
+    }
+
+    .client-viewport.dragging {
+      cursor: grabbing
+    }
+
+    .client-track {
+      display: flex;
+      transition: transform .36s cubic-bezier(.22, .61, .36, 1);
+      will-change: transform
+    }
+
+    .client-slide {
+      flex: 0 0 100%;
+      min-width: 100%;
+      padding: 26px 24px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px
+    }
+
+    .client-slide img {
+      width: 100%;
+      height: 210px;
+      object-fit: contain;
+      pointer-events: none
+    }
+
+    .client-controls {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 340px;
+      margin: 18px auto 0
+    }
+
+    .client-nav-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background: var(--navy);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: transform .2s, background-color .2s
+    }
+
+    .client-nav-btn:hover {
+      transform: scale(1.06);
+      background: var(--red)
+    }
+
+    .client-line {
+      flex: 1;
+      height: 1.5px;
+      background: rgba(72, 71, 127, .7)
+    }
+
+    .client-note {
+      text-align: center;
+      color: var(--navy);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      margin: 10px 0 0
+    }
+
+    .testimonial-slider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 28px
+    }
+
+    .testimonial {
+      flex: 1;
+      min-width: 0;
+      background: var(--navy);
+      color: #fff;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden
+    }
+
+    .testimonial-viewport {
+      width: 100%;
+      overflow: hidden;
+      cursor: grab;
+      touch-action: pan-y;
+      user-select: none
+    }
+
+    .testimonial-viewport.dragging {
+      cursor: grabbing
+    }
+
+    .testimonial-track {
+      display: flex;
+      transition: transform .36s cubic-bezier(.22, .61, .36, 1);
+      will-change: transform
+    }
+
+    .testimonial-slide {
+      flex: 0 0 100%;
+      min-width: 100%;
+      padding: 25px 25px 25px 22px;
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 22px;
+      align-items: center
+    }
+
+    .testimonial img {
+      width: 130px;
+      height: 85px;
+      object-fit: contain;
+      border-radius: 12px;
+      padding: 10px;
+      pointer-events: none
+    }
+
+    .testimonial h3 {
+      font-size: 14px;
+      margin: 0 0 6px;
+      font-weight: 900
+    }
+
+    .stars {
+      color: #f6bb26;
+      letter-spacing: 2px
+    }
+
+    .testimonial p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #eeeef8;
+      margin: 0
+    }
+
+    /* ================= KONTAK ================= */
+    .contact-wrap {
+      background: var(--soft);
+      border-radius: 42px;
+      padding: 40px 48px;
+      max-width: 720px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px
+    }
+
+    .contact-title .eyebrow {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0
+    }
+
+    .contact-title h2 {
+      font-size: clamp(28px, 3.6vw, 40px);
+      line-height: 1.1;
+      color: var(--navy);
+      margin: 4px 0 0;
+      font-weight: 900
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 12px
+    }
+
+    .contact-label {
+      display: block;
+      color: #77769a;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin: 0 0 5px 4px
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #e5e5e8;
+      padding: 12px 16px;
+      border-radius: 15px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #55547f;
+      min-height: 52px;
+      text-decoration: none;
+      transition: background-color .2s, color .2s
+    }
+
+    .contact-row:hover {
+      background: #dcdce2;
+      color: var(--navy)
+    }
+
+    .contact-row .c-icon {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      background: #7b7aa3;
+      color: white;
+      border-radius: 9px;
+      font-size: 17px;
+      flex-shrink: 0
+    }
+
+    .contact-row .c-text {
+      flex: 1;
+      min-width: 0;
+      line-height: 1.45
+    }
+
+    .contact-row .c-ext {
+      color: #6f6e96;
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+      margin-left: auto
+    }
+
+    .contact-footer {
+      background: #7b7aa3;
+      color: white;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 12px;
+      padding: 12px 15px;
+      margin-top: 8px
+    }
+
+    footer {
+      background: var(--navy);
+      color: #fff;
+      padding: 28px 0;
+      margin-top: 80px
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 11px;
+      color: #e6e6f6
+    }
+
+    .footer-row b {
+      font-size: 14px;
+      color: #fff
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px
+    }
+
+    .footer-links a:hover {
+      color: #ffb0a8
+    }
+
+    /* ================= UTILITAS ================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity .7s ease, transform .7s ease
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(17, 17, 38, .88);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      cursor: zoom-out
+    }
+
+    .lightbox.open {
+      display: flex
+    }
+
+    .lightbox img {
+      max-width: min(100%, 1000px);
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: 14px;
+      box-shadow: 0 18px 60px rgba(0, 0, 0, .25)
+    }
+
+    .lightbox button {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 50%;
+      background: white;
+      color: var(--navy);
+      font-size: 24px;
+      cursor: pointer
+    }
+
+    /* ================= LAYAR KECIL DARI DESKTOP (≤ 1200px) ================= */
+    @media (min-width: 981px) {
+      .service-grid {
+        grid-template-columns: repeat(6, 1fr)
+      }
+
+      .service-grid>* {
+        grid-column: span 2
+      }
+
+      .service-grid>:nth-child(n+4) {
+        grid-column: span 3
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav-wrap {
+        width: min(var(--max), calc(100% - 36px))
+      }
+
+      .nav-links {
+        gap: 15px;
+        font-size: 11px
+      }
+
+      .brand-logo {
+        width: 70px;
+        height: 48px
+      }
+
+      .brand-name {
+        font-size: 15px
+      }
+
+      .brand-tagline {
+        font-size: 9px
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr .9fr;
+        gap: 28px
+      }
+
+      .about-grid,
+      .legal-grid,
+      .client-area {
+        gap: 35px
+      }
+.vision>div {
+        width: 100%;
+        max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+      }
+
+      .vision {
+        gap: 40px
+      }
+
+      .packshot-grid {
+        grid-template-columns: 1fr;
+        gap: 60px
+      }
+
+      .contact-wrap {
+        gap: 30px;
+        padding: 38px
+      }
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 565px) {
+      html {
+        scroll-padding-top: 72px
+      }
+
+      .nav-wrap {
+        height: 70px
+      }
+
+      .brand {
+        gap: 8px
+      }
+
+      .brand-logo {
+        width: 53px;
+        height: 43px
+      }
+
+      .brand-name {
+        font-size: 11px;
+        letter-spacing: -.025em
+      }
+
+      .brand-tagline {
+        font-size: 7px;
+        margin-top: 2px
+      }
+
+      .menu-toggle {
+        display: block
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #f4f4f5;
+        padding: 15px 24px 22px;
+        box-shadow: 0 14px 20px rgba(30, 30, 70, .10);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0
+      }
+
+      .nav-links.open {
+        display: flex
+      }
+
+      .nav-links a {
+        padding: 12px 4px;
+        border-bottom: 1px solid #e1e1e8;
+        font-size: 13px
+      }
+
+      .container {
+        width: calc(100% - 38px)
+      }
+
+      .section {
+        padding: 75px 0
+      }
+
+      .section-sm {
+        padding: 55px 0
+      }
+
+      .hero {
+        padding: 42px 0 35px
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 6px
+      }
+
+      .hero .eyebrow {
+        font-size: 17px;
+        margin-bottom: 12px
+      }
+
+      .hero h1 {
+        font-size: clamp(43px, 10vw, 67px);
+        line-height: 1.02
+      }
+
+      .hero-desc {
+        font-size: 14px;
+        margin: 19px 0 22px;
+        line-height: 1.7
+      }
+
+      .hero-visual {
+        width: 100%;
+        margin: 8px auto 0
+      }
+
+      .hero-visual img {
+        width: 100%;
+        max-height: 390px;
+        object-fit: contain
+      }
+
+      .hero-proof {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        margin-top: 25px
+      }
+
+      .proof-card {
+        min-height: 64px;
+        padding: 9px 12px
+      }
+
+      .proof-icon {
+        width: 42px;
+        height: 42px;
+        flex-basis: 42px
+      }
+
+      .proof-card strong {
+        font-size: 11px
+      }
+
+      .proof-card small {
+        font-size: 9px
+      }
+
+      .investment {
+        padding: 12px 0
+      }
+
+      .investment h2 {
+        font-size: 34px
+      }
+
+      .price-banner {
+        max-width: 380px;
+        border-radius: 14px
+      }
+
+      .old-price {
+        font-size: clamp(27px, 8vw, 45px);
+        padding: 15px 12px
+      }
+
+      .new-price {
+        font-size: clamp(32px, 9vw, 48px);
+        padding: 16px 15px;
+        border-radius: 12px
+      }
+
+      .investment h3 {
+        font-size: clamp(23px, 6.4vw, 35px)
+      }
+
+      .investment p {
+        font-size: 14px
+      }
+
+      .factory-banner {
+        margin-top: 48px;
+        min-height: 290px
+      }
+
+      .factory-banner-content {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        min-height: 290px;
+        padding: 30px 25px;
+        margin: 0 auto
+      }
+
+      .label-white {
+        font-size: 15px;
+        padding: 8px 14px
+      }
+
+      .factory-banner h2 {
+        font-size: 34px
+      }
+
+      .about-grid,
+      .vision,
+      .legal-grid,
+      .service-head,
+      .client-area,
+      .contact-wrap {
+        grid-template-columns: 1fr;
+        gap: 28px
+      }
+
+      .about-copy p,
+      .vision-intro p,
+      .section-copy {
+        font-size: 14px
+      }
+
+      .pill-title {
+        margin: 18px 0;
+        font-size: 15px;
+        padding: 10px 18px
+      }
+
+      .why-card {
+        padding: 12px;
+        gap: 12px
+      }
+
+      .why-icon {
+        width: 50px;
+        height: 50px;
+        flex-basis: 50px;
+        font-size: 21px
+      }
+
+      .why-card strong {
+        font-size: 13px
+      }
+
+      .why-card p {
+        font-size: 10px
+      }
+
+      .stats {
+        grid-template-columns: 1fr 1fr;
+        padding: 14px 10px;
+        gap: 16px
+      }
+
+      .stat {
+        justify-content: flex-start
+      }
+
+      .stat-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 17px
+      }
+
+      .stat b {
+        font-size: 17px
+      }
+
+      .stat small {
+        font-size: 7px
+      }
+
+      .quote {
+        font-size: 17px;
+        margin-top: 27px
+      }
+
+      .vision {
+        margin-top: 60px
+      }
+
+      .mission-title {
+        font-size: 22px;
+        margin-bottom: 16px
+      }
+
+      .mission-card {
+        padding: 20px;
+        border-radius: 22px
+      }
+
+      .spiritual-card {
+        margin-bottom: 40px
+      }
+
+      .business-card {
+        gap: 24px
+      }
+
+      .mission-item {
+        gap: 12px
+      }
+
+      .mission-icon {
+        width: 78px;
+        height: 78px;
+        min-width: 78px
+      }
+
+      .mission-text {
+        font-size: 17px;
+        line-height: 1.25
+      }
+
+      .service-head {
+        margin-bottom: 25px
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+        gap: 12px
+      }
+
+      .service-card {
+        min-height: 0;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 45px 1fr;
+        column-gap: 13px;
+        align-items: start
+      }
+
+      .service-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 19px;
+        grid-row: span 2;
+        margin: 0
+      }
+
+      .service-card h3 {
+        font-size: 14px;
+        margin: 2px 0 5px
+      }
+
+      .service-card p {
+        font-size: 11px
+      }
+
+      .certificates {
+        gap: 10px
+      }
+
+      .certificate {
+        border-width: 2px;
+        border-radius: 13px;
+        padding: 5px;
+        box-shadow: 3px 3px 0 var(--red)
+      }
+
+      .certificate img {
+        height: 235px
+      }
+
+      .legal-points {
+        margin-top: 20px
+      }
+
+      .legal-point {
+        padding: 12px;
+        gap: 10px
+      }
+
+      .legal-point .service-icon {
+        width: 42px;
+        height: 42px;
+        flex-basis: 42px
+      }
+
+      .legal-point strong {
+        font-size: 11px
+      }
+
+      .legal-point p {
+        font-size: 10px
+      }
+
+      .legal-quote {
+        font-size: 13px
+      }
+
+      .product-meta {
+        gap: 8px
+      }
+
+      .product-meta span {
+        font-size: 10px;
+        padding: 7px 10px
+      }
+
+      .product-group {
+        margin-top: 30px
+      }
+
+      .product-group h3 {
+        font-size: 30px;
+        margin-bottom: 14px
+      }
+
+      .food-list {
+        grid-template-columns: 1fr;
+        gap: 10px
+      }
+
+      .food-card {
+        min-height: 110px;
+        border-radius: 15px;
+        padding-left: 13px
+      }
+
+      .food-info {
+        width: 68%
+      }
+
+      .food-card h4 {
+        font-size: 13px
+      }
+
+      .food-no {
+        width: 22px;
+        height: 22px;
+        font-size: 10px
+      }
+
+      .food-card p {
+        font-size: 10px;
+        margin: 6px 0 0 28px
+      }
+
+      .food-photo {
+        width: 43%
+      }
+
+      .raw-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px
+      }
+
+      .raw-gallery img {
+        height: 160px;
+        border-radius: 18px;
+        border-width: 3px
+      }
+
+      .gallery-label {
+        font-size: 28px;
+        margin-top: 28px
+      }
+
+      #dokumentasi .heading .red {
+        display: block
+      }
+
+      #dokumentasi .section-copy {
+        margin-top: 10px
+      }
+
+      .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px
+      }
+
+      .photo-grid img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        border-radius: 14px;
+        border-width: 2px;
+        box-shadow: 0 4px 12px rgba(40, 38, 92, 0.08)
+      }
+
+      .client-card {
+        padding: clamp(12px, 3.5vw, 18px);
+        border-radius: clamp(24px, 7vw, 34px);
+        margin-top: 18px
+      }
+
+      .client-viewport {
+        border-radius: clamp(18px, 5vw, 24px)
+      }
+
+      .client-slide {
+        padding: clamp(16px, 5vw, 24px) clamp(14px, 4vw, 20px);
+        gap: 10px
+      }
+
+      .client-slide img {
+        height: clamp(120px, 36vw, 165px)
+      }
+
+      .client-slide b {
+        font-size: 14px
+      }
+
+      .client-controls {
+        width: 100%;
+        max-width: min(290px, 85%);
+        margin-top: 14px;
+        gap: 10px
+      }
+
+      .client-nav-btn {
+        width: 34px;
+        height: 34px
+      }
+
+      .client-nav-btn svg {
+        width: 16px;
+        height: 16px
+      }
+
+      .client-note {
+        font-size: 9px;
+        margin-top: 8px
+      }
+
+      .testimonial-slider {
+        gap: 8px;
+        margin-top: 20px
+      }
+
+      .testimonial {
+        border-radius: 17px
+      }
+
+      .testimonial-slide {
+        grid-template-columns: 78px 1fr;
+        padding: 14px 12px;
+        gap: 10px
+      }
+
+      .testimonial img {
+        width: 78px;
+        height: 64px;
+        padding: 6px
+      }
+
+      .testimonial h3 {
+        font-size: 11px
+      }
+
+      .testimonial p {
+        font-size: 9px
+      }
+
+      .stars {
+        font-size: 11px
+      }
+
+      .contact-wrap {
+        padding: 26px 20px;
+        border-radius: 28px;
+        gap: 14px
+      }
+
+      .contact-title h2 {
+        font-size: 28px
+      }
+
+      .contact-row {
+        font-size: 11px;
+        padding: 11px;
+        min-height: 48px
+      }
+
+      .contact-row .c-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 14px
+      }
+
+      .contact-footer {
+        font-size: 10px
+      }
+
+      footer {
+        margin-top: 50px;
+        padding: 23px 0
+      }
+
+      .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 9px
+      }
+
+      .footer-links {
+        gap: 12px;
+        flex-wrap: wrap
+      }
+    }
+
+    @media (max-width: 768px) {
+      .packshot-section {
+        padding: 70px 0
+      }
+
+      .packshot-heading p {
+        font-size: 15px
+      }
+
+      .packshot-grid {
+        gap: 70px;
+        margin-top: 50px
+      }
+
+      .packshot-card {
+        padding: 44px 20px 18px
+      }
+
+      .packshot-category {
+        top: -28px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        max-width: 95%;
+        padding: 2px 12px;
+        font-size: clamp(24px, 7vw, 34px);
+        text-align: center
+      }
+
+      .packshot-visual {
+        height: 165px
+      }
+
+      .packshot-accent {
+        height: 88%;
+        border-radius: 13px
+      }
+
+      .packshot-image {
+        width: 100%;
+        max-width: none;
+        height: 220px;
+        margin-top: -5px
+      }
+
+      .packshot-info {
+        padding: 12px 6px 0
+      }
+
+      .packshot-info h3 {
+        font-size: 17px
+      }
+
+      .packshot-type {
+        font-size: 15px
+      }
+
+      .packshot-info>p {
+        font-size: 15px;
+        margin: 6px 0 12px
+      }
+
+      .packshot-option {
+        font-size: 15px;
+        gap: 14px
+      }
+
+      .option-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px
+      }
+
+      .packshot-features {
+        padding: 12px 6px;
+        border-radius: 13px;
+        margin-top: 16px
+      }
+
+      .packshot-feature {
+        padding: 4px;
+        gap: 5px
+      }
+
+      .packshot-feature>i {
+        font-size: 24px
+      }
+
+      .packshot-feature strong {
+        font-size: 11px
+      }
+
+      .packshot-feature small {
+        font-size: 9px
+      }
+    }
+
+    @media (max-width: 380px) {
+      .brand {
+        gap: 6px
+      }
+
+      .brand-logo {
+        width: 47px;
+        height: 40px
+      }
+
+      .brand-name {
+        font-size: 10px
+      }
+
+      .brand-tagline {
+        font-size: 6.5px
+      }
+
+      .hero h1 {
+        font-size: 40px
+      }
+
+      .hero .eyebrow {
+        font-size: 15px
+      }
+
+      .container {
+        width: calc(100% - 30px)
+      }
+
+      .certificate img {
+        height: 190px
+      }
+
+      .food-card {
+        min-height: 125px
+      }
+
+      .food-card h4 {
+        font-size: 12px
+      }
+
+      .food-card p {
+        font-size: 9px
+      }
+
+      .raw-gallery img {
+        height: 135px
+      }
+
+      .photo-grid {
+        gap: 8px
+      }
+
+      .photo-grid img {
+        border-radius: 12px
+      }
+
+      .client-card {
+        padding: 12px;
+        border-radius: 24px
+      }
+
+      .client-viewport {
+        border-radius: 18px
+      }
+
+      .client-slide {
+        padding: 16px 12px
+      }
+
+      .client-slide img {
+        height: 125px
+      }
+
+      .client-controls {
+        max-width: 240px;
+        gap: 8px
+      }
+
+      .client-nav-btn {
+        width: 30px;
+        height: 30px
+      }
+
+      .packshot-heading h2 {
+        font-size: 32px
+      }
+
+      .packshot-image {
+        width: 90%
+      }
+
+      .packshot-feature>i {
+        font-size: 23px
+      }
+
+      .packshot-feature strong {
+        font-size: 10px
+      }
+
+      .packshot-feature small {
+        font-size: 8px
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      *,
+      *:before,
+      *:after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none
+      }
+    }
+    /* ===== KLIEN & TESTIMONI: TENGAH & VERTIKAL ===== */
+.client-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.client-area>div {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.client-area .section-copy {
+  margin: 18px auto 0;
+  max-width: 560px;
+}
+
+.client-area .testimonial-slider {
+  width: 100%;
+  margin-top: 28px;
+}
+
+/* Teks dalam kartu testimoni tetap rata kiri agar mudah dibaca */
+.client-area .testimonial-slide {
+  text-align: left;
+}
+
+/* Jarak antara kartu klien di layar kecil */
+@media (max-width: 565px) {
+  .client-area {
+    gap: 60px;
+  }
+}
+/* ===== LEGALITAS: TENGAH & VERTIKAL ===== */
+.legal-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.legal-grid>div {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.legal-grid .section-copy {
+  margin: 18px auto 0;
+  max-width: 600px;
+}
+
+.legal-grid .certificates {
+  width: 100%;
+  max-width: 560px;
+  margin-top: 30px;
+}
+
+.legal-grid .legal-points {
+  width: 100%;
+  margin-top: 0;
+  text-align: left;
+}
+
+.legal-grid .legal-quote {
+  margin-top: 25px;
+}
+
+/* ===== VISI & MISI: TENGAH & VERTIKAL ===== */
+.vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  margin-top: 85px;
+}
+
+.vision>div {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.vision .vision-intro p {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.vision .mission-section {
+  width: 100%;
+}
+
+.vision .mission-title {
+  text-align: center;
+}
+
+/* Isi kartu misi tetap rata kiri agar mudah dibaca */
+.vision .mission-card {
+  text-align: left;
+}
+
+/* Jarak antar bagian di layar kecil */
+@media (max-width: 565px) {
+  .legal-grid {
+    gap: 50px;
+  }
+
+  .vision {
+    gap: 50px;
+    margin-top: 60px;
+  }
+}
+/* ===== KENAPA MEMILIH SBU (ABOUT-GRID): TENGAH & VERTIKAL ===== */
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.about-grid>div {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-grid .pill-title {
+  margin: 0 auto 18px;
+}
+
+.about-grid .why-list {
+  width: 100%;
+}
+
+/* Isi kartu tetap rata kiri agar mudah dibaca */
+.about-grid .why-card {
+  width: 100%;
+  text-align: left;
+}
+
+.about-grid .stats {
+  width: 100%;
+  margin-top: 0;
+}
+
+.about-grid .quote {
+  max-width: 640px;
+  margin: 34px auto 0;
+}
+
+/* ===== SECTION TENTANG KAMI (CONTAINER): TENGAH ===== */
+.factory-banner-content {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 750px;
+}
+
+.factory-banner + .section-copy {
+  margin: 32px auto 0;
+  text-align: left;
+  max-width: 720px;
+}
+
+/* Jarak antar bagian di layar kecil */
+@media (max-width: 565px) {
+  .about-grid {
+    gap: 50px;
+  }
+
+  .factory-banner + .section-copy {
+    margin-top: 24px;
+  }
+}
+/* ===== HERO PROOF: HORIZONTAL DI MOBILE ===== */
+@media (max-width: 565px) {
+  .hero-proof {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .proof-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 8px;
+    min-height: 0;
+    padding: 12px 8px;
+    border-radius: 14px;
+  }
+
+  .proof-card>div:last-child {
+    min-width: 0;
+  }
+
+  .proof-icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    font-size: 16px;
+  }
+
+  .proof-card strong {
+    font-size: 10px;
+    line-height: 1.25;
+  }
+
+  .proof-card small {
+    font-size: 8.5px;
+    line-height: 1.3;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 380px) {
+  .proof-icon {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+    font-size: 14px;
+  }
+
+  .proof-card strong {
+    font-size: 9px;
+  }
+
+  .proof-card small {
+    font-size: 8px;
+  }
+}
+/* ===== PRICE BANNER: RESPONSIVE ===== */
+.investment {
+  padding: 22px 0 20px;
+  text-align: center;
+}
+
+.investment h2 {
+  font-size: clamp(28px, 7vw, 48px);
+  margin: 0 0 14px;
+}
+
+.price-banner {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* Harga lama: coret merah di tengah */
+.price-banner .old-price {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 10px;
+  font-size: clamp(22px, 6vw, 48px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  color: #fff;
+  position: relative;
+}
+
+.price-banner .old-price:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background: var(--red);
+  left: 8%;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Harga baru: kotak merah dengan outline navy */
+.price-banner .new-price {
+  flex: 1.15 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 10px;
+  background: var(--red);
+  font-size: clamp(26px, 7vw, 56px);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 0;
+  text-shadow: 2px 2px 0 var(--navy), -2px -2px 0 var(--navy), 2px -2px 0 var(--navy), -2px 2px 0 var(--navy);
+}
+
+.investment h3 {
+  margin: 14px 0 0;
+  font-size: clamp(20px, 5.5vw, 42px);
+  line-height: 1.15;
+}
+
+.investment p {
+  margin: 8px 0 0;
+  font-size: clamp(14px, 3.8vw, 17px);
+}
+
+/* Layar kecil: outline lebih tipis agar tidak tebal */
+@media (max-width: 565px) {
+  .price-banner {
+    border-radius: 14px;
+  }
+
+  .price-banner .old-price,
+  .price-banner .new-price {
+    padding: 16px 8px;
+  }
+
+  .price-banner .new-price {
+    text-shadow: 1.5px 1.5px 0 var(--navy), -1.5px -1.5px 0 var(--navy), 1.5px -1.5px 0 var(--navy), -1.5px 1.5px 0 var(--navy);
+  }
+}
+
+@media (max-width: 380px) {
+  .price-banner .new-price {
+    text-shadow: 1px 1px 0 var(--navy), -1px -1px 0 var(--navy), 1px -1px 0 var(--navy), -1px 1px 0 var(--navy);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="topline"></div>
+  <header class="header">
+    <div class="nav-wrap">
+      <a class="brand" href="#beranda" aria-label="Sahabat Bangun Usaha">
+        <img class="brand-logo" src="images/LOGO SBU.webp" alt="Logo SBU">
+        <span class="brand-text">
+          <span class="brand-name">SAHABAT BANGUN USAHA</span>
+          <span class="brand-tagline">Kualitas Terbaik Untuk Usaha Anda</span>
+        </span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#produk">Produk</a>
+        <a href="#dokumentasi">Dokumentasi</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Partner Maklon Makanan Anda</p>
+            <h1><span>Mulai Brand</span><span>Sendiri,</span><span class="red">Nggak Harus</span><span
+                class="red">Mahal.</span></h1>
+            <p class="hero-desc">Punya ide bisnis makanan tapi bingung mulai dari mana? SBU siap jadi sahabat usaha
+              Anda. Dari pengembangan produk, produksi, kemasan, sampai legalitas—kami bantu wujudkan brand makanan
+              impian Anda.</p>
+          </div>
+
+          <div class="hero-visual">
+            <img src="images/Triple Display Podium.webp" alt="Produk Cik Emam dengan display podium">
+          </div>
+
+          <div class="hero-proof reveal">
+            <div class="proof-card">
+              <div class="proof-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M128 96C92.7 96 64 124.7 64 160L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 256C576 220.7 547.3 192 512 192L136 192C122.7 192 112 181.3 112 168C112 154.7 122.7 144 136 144L520 144C533.3 144 544 133.3 544 120C544 106.7 533.3 96 520 96L128 96zM480 320C497.7 320 512 334.3 512 352C512 369.7 497.7 384 480 384C462.3 384 448 369.7 448 352C448 334.3 462.3 320 480 320z"/></svg></div>
+              <div><strong>MOQ Rendah</strong><small>Mulai produksi tanpa beban stok besar</small></div>
+            </div>
+            <div class="proof-card">
+              <div class="proof-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div><strong>Cocok Untuk Pemula</strong><small>Dibimbing dari ide sampai produk jadi</small></div>
+            </div>
+            <div class="proof-card">
+              <div class="proof-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+              <div><strong>Produk Tahan Lama &amp; Aman</strong><small>Kualitas terjaga, aman, dan higienis</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <section class="investment container reveal">
+      <h2>MODAL</h2>
+      <div class="price-banner">
+        <div class="old-price">10 JUTA</div>
+        <div class="new-price">3 JUTA!</div>
+      </div>
+      <h3>BISA JADI OWNER!</h3>
+      <p>Investasi Kecil, Keuntungan <b>BESAR</b></p>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="container">
+      <div class="factory-banner reveal">
+        <img src="images/factory-banner.jpg" alt="Kegiatan tim produksi SBU" loading="lazy">
+        <div class="factory-banner-content">
+          <div class="label-white">TENTANG <span>KAMI</span></div>
+          <h2>Kualitas Terbaik<br>Untuk Usaha Anda</h2>
+        </div>
+      </div>
+      <p class="section-copy" style="margin-top:32px">SBU (Sahabat Bangun Usaha) adalah partner maklon makanan terpercaya yang membantu Anda membangun brand
+        tanpa harus memiliki pabrik sendiri. Kami telah membantu berbagai pelaku usaha, mulai dari UMKM hingga
+        brand berkembang, dalam menciptakan produk makanan berkualitas yang siap bersaing di pasar.</p>
+    </section>
+
+    <!-- KENAPA SBU + VISI MISI -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <div class="pill-title">KENAPA MEMILIH SBU?</div>
+            <div class="why-list">
+              <div class="why-card">
+                <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></div>
+                <div><strong>FASILITAS PRODUKSI MODERN</strong>
+                  <p>Didukung mesin dan teknologi terkini untuk hasil produksi yang konsisten dan efisien.</p>
+                </div>
+              </div>
+              <div class="why-card">
+                <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></div>
+                <div><strong>TIM BERPENGALAMAN</strong>
+                  <p>Tim profesional dengan pengalaman luas di industri kuliner.</p>
+                </div>
+              </div>
+              <div class="why-card">
+                <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+                <div><strong>PRODUK AMAN &amp; HALAL</strong>
+                  <p>Sertifikasi halal, standar keamanan pangan, dan proses produksi terjamin.</p>
+                </div>
+              </div>
+              <div class="why-card">
+                <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+                <div><strong>SUPPORT LENGKAP</strong>
+                  <p>Kami mendampingi Anda dari ide produk sampai produk siap jual.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                <div><b>100+</b><small>Brand telah bekerja sama</small></div>
+              </div>
+              <div class="stat">
+                <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div><b>10+</b><small>Tahun pengalaman</small></div>
+              </div>
+              <div class="stat">
+                <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <div><b>1000+</b><small>Produksi setiap bulan</small></div>
+              </div>
+              <div class="stat">
+                <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                <div><b>Seluruh</b><small>Indonesia dan luar negeri</small></div>
+              </div>
+            </div>
+            <blockquote class="quote">“Fokus kami adalah membantu Anda mempercepat proses membangun brand dengan cara
+              yang lebih mudah, efisien, dan menguntungkan”.</blockquote>
+          </div>
+        </div>
+
+        <div class="vision reveal">
+          <div class="vision-intro">
+            <h2 class="heading">VISI DAN<br><span class="red">MISI</span></h2>
+            <p>Komitmen kami untuk menjadi mitra terbaik dalam membangun brand makanan yang sukses.</p>
+            <h3 class="heading" style="font-size:clamp(28px,3vw,40px);margin-top:35px">VISI <span
+                class="red">KAMI</span></h3>
+            <p>Menjadi partner usaha bidang makanan terbaik berskala nasional dan internasional baik dari skala kecil
+              hingga besar dengan harga yang bersahabat.</p>
+          </div>
+
+          <div>
+            <h3 class="heading" style="font-size:clamp(28px,3vw,40px);margin-bottom:18px">MISI <span
+                class="red">KAMI</span></h3>
+
+            <div class="mission-section">
+              <h2 class="mission-title">MISI SPIRITUAL</h2>
+              <div class="mission-card spiritual-card">
+                <div class="mission-item">
+                  <div class="mission-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  </div>
+                  <p class="mission-text">
+                    Menjadi perusahaan yang mendatangkan banyak manfaat,
+                    berkah, dan inspirasi kebaikan bagi banyak orang agar
+                    mendapat ridha Allah SWT.
+                  </p>
+                </div>
+              </div>
+
+              <h2 class="mission-title">BUSINESS MISSION</h2>
+              <div class="mission-card business-card">
+                <div class="mission-item">
+                  <div class="mission-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                  </div>
+                  <p class="mission-text">
+                    Menghasilkan produk yang aman, berkualitas tinggi,
+                    dan konsisten.
+                  </p>
+                </div>
+
+                <div class="mission-item">
+                  <div class="mission-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <p class="mission-text">
+                    Membangun kerjasama yang saling menguntungkan
+                    dengan mitra.
+                  </p>
+                </div>
+
+                <div class="mission-item">
+                  <div class="mission-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M598.1 139.4C608.8 131.6 611.2 116.6 603.4 105.9C595.6 95.2 580.6 92.8 569.9 100.6L495.4 154.8L485.5 148.2C465.8 135 442.6 128 418.9 128L359.7 128L359.3 128L215.7 128C189 128 163.2 136.9 142.3 153.1L70.1 100.6C59.4 92.8 44.4 95.2 36.6 105.9C28.8 116.6 31.2 131.6 41.9 139.4L129.9 203.4C139.5 210.3 152.6 209.3 161 201L164.9 197.1C178.4 183.6 196.7 176 215.8 176L262.1 176L170.4 267.7C154.8 283.3 154.8 308.6 170.4 324.3L171.2 325.1C218 372 294 372 340.9 325.1L368 298L465.8 395.8C481.4 411.4 481.4 436.7 465.8 452.4L456 462.2L425 431.2C415.6 421.8 400.4 421.8 391.1 431.2C381.8 440.6 381.7 455.8 391.1 465.1L419.1 493.1C401.6 503.5 381.9 509.8 361.5 511.6L313 463C303.6 453.6 288.4 453.6 279.1 463C269.8 472.4 269.7 487.6 279.1 496.9L294.1 511.9L290.3 511.9C254.2 511.9 219.6 497.6 194.1 472.1L65 343C55.6 333.6 40.4 333.6 31.1 343C21.8 352.4 21.7 367.6 31.1 376.9L160.2 506.1C194.7 540.6 241.5 560 290.3 560L342.1 560L343.1 561L344.1 560L349.8 560C398.6 560 445.4 540.6 479.9 506.1L499.8 486.2C501 485 502.1 483.9 503.2 482.7C503.9 482.2 504.5 481.6 505.1 481L609 377C618.4 367.6 618.4 352.4 609 343.1C599.6 333.8 584.4 333.7 575.1 343.1L521.3 396.9C517.1 384.1 510 372 499.8 361.8L385 247C375.6 237.6 360.4 237.6 351.1 247L307 291.1C280.5 317.6 238.5 319.1 210.3 295.7L309 197C322.4 183.6 340.6 176 359.6 175.9L368.1 175.9L368.3 175.9L419.1 175.9C433.3 175.9 447.2 180.1 459 188L482.7 204C491.1 209.6 502 209.3 510.1 203.4L598.1 139.4z"/></svg>
+                  </div>
+                  <p class="mission-text">
+                    Memberikan layanan produksi yang efisien dengan
+                    biaya yang kompetitif tanpa mengorbankan kualitas.
+                  </p>
+                </div>
+
+                <div class="mission-item">
+                  <div class="mission-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  </div>
+                  <p class="mission-text">
+                    Memberikan pengalaman pelanggan yang terbaik melalui
+                    komunikasi yang transparan, responsif, dan solusi
+                    yang disesuaikan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="section" id="layanan" style="background:#fafafa">
+      <div class="container">
+        <div class="service-head reveal">
+          <div>
+            <h2 class="heading">LAYANAN <span class="red">KAMI</span></h2>
+          <p class="section-copy" style="margin:0">Kami menyediakan layanan lengkap untuk membantu mewujudkan brand
+            makanan Anda menjadi produk berkualitas dan siap bersaing di pasar.</p>
+
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="service-card-content">
+              <h3>1. R&amp;D &amp; Formulasi Produk</h3>
+              <p>Pengembangan formula sesuai konsep brand, dari riset bahan hingga uji ketahanan.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></div>
+            <div class="service-card-content">
+              <h3>2. Supplier Bahan Baku</h3>
+              <p>Kami menyediakan bahan baku berkualitas untuk memastikan rasa produk Anda tetap terjaga dan konsisten.
+              </p>
+            </div>
+          </div>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h3>3. Desain &amp; Cetak Kemasan</h3>
+            <p>Kemasan custom untuk brand Anda, dari desain hingga cetak.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <h3>4. Legalitas &amp; Perizinan</h3>
+            <p>Pengurusan izin edar, dan sertifikasi halal agar produk siap dipasarkan.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3>5. Quality Control &amp; Pengiriman</h3>
+            <p>Pemeriksaan kualitas menyeluruh sebelum produk dikemas dan dikirim.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEGALITAS -->
+    <section class="section" id="legalitas">
+      <div class="container">
+        <div class="legal-grid">
+          <div class="reveal">
+            <h2 class="heading">LEGALITAS<br><span class="red">USAHA RESMI</span></h2>
+            <p class="section-copy">Kami berkomitmen untuk selalu memenuhi peraturan dan menjalankan usaha secara legal
+              dan profesional serta memenuhi standar keamanan pangan dan peraturan perundang-undangan yang berlaku.</p>
+            <div class="certificates">
+              <div class="certificate"><img src="images/Sertif-Usaha.webp" alt="Dokumen legalitas usaha" loading="lazy"></div>
+              <div class="certificate"><img src="images/Sertif-Usaha.webp" alt="Dokumen sertifikasi halal" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="legal-points">
+              <div class="legal-point">
+                <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg></div>
+                <div><strong>LEGALITAS USAHA RESMI</strong>
+                  <p>Memiliki NIB dan izin usaha resmi dari pemerintah.</p>
+                </div>
+              </div>
+              <div class="legal-point">
+                <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                <div><strong>SERTIFIKASI HALAL</strong>
+                  <p>Sertifikasi halal resmi dari BPJPH (Kementerian Agama RI).</p>
+                </div>
+              </div>
+              <div class="legal-point">
+                <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <div><strong>TERDAFTAR &amp; TERVERIFIKASI</strong>
+                  <p>Seluruh data usaha terdaftar dan diverifikasi oleh instansi berwenang.</p>
+                </div>
+              </div>
+            </div>
+            <p class="legal-quote">“Produk Anda <span style="color:var(--red)">lebih dipercaya</span> pasar dan siap
+              masuk ke berbagai channel distribusi dan legalitas yang lengkap”.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILIHAN KEMASAN -->
+    <section class="packshot-section">
+      <div class="container">
+        <div class="packshot-heading reveal">
+          <h2>PILIHAN KEMASAN <span>PRODUK ANDA</span></h2>
+          <p>Pilih jenis kemasan sesuai dengan positioning brand dan target market Anda.</p>
+        </div>
+
+        <div class="packshot-grid">
+          <!-- Kartu 1 -->
+          <div class="packshot-card reveal">
+            <div class="packshot-category">STANDING POUCH</div>
+
+            <div class="packshot-visual">
+              <div class="packshot-accent"></div>
+              <img src="images/Five-Pouch.webp" alt="Pilihan kemasan Standing Pouch" class="packshot-image">
+            </div>
+
+            <div class="packshot-info">
+              <h3>Standing Pouch - Metalize 100</h3>
+              <span class="packshot-type">(Super Glossy/Matte)</span>
+              <p>Tampilan premium yang meningkatkan value produk dan daya tarik di pasaran.</p>
+
+              <div class="packshot-options">
+                <div class="packshot-option">
+                  <div class="option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/></svg></div>
+                  <span>Kemasan Non-Ziplock</span>
+                </div>
+                <div class="packshot-option">
+                  <div class="option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
+                  <span>Kemasan Ziplock</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="packshot-features">
+              <div class="packshot-feature">
+                <i class="fa-regular fa-gem"></i>
+                <div><strong>Premium</strong><small>Tampilan lebih menarik</small></div>
+              </div>
+              <div class="packshot-feature">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div><strong>Aman &amp; Kuat</strong><small>Melindungi produk lebih optimal</small></div>
+              </div>
+              <div class="packshot-feature">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <div><strong>Cocok untuk</strong><small>Retail &amp; marketplace</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 2 -->
+          <div class="packshot-card reveal">
+            <div class="packshot-category">STANDING POUCH</div>
+
+            <div class="packshot-visual">
+              <div class="packshot-accent"></div>
+              <img src="images/Five-Pouch.webp" alt="Pilihan kemasan Standing Pouch" class="packshot-image">
+            </div>
+
+            <div class="packshot-info">
+              <h3>Standing Pouch - Metalize 100</h3>
+              <span class="packshot-type">(Super Glossy/Matte)</span>
+              <p>Tampilan premium yang meningkatkan value produk dan daya tarik di pasaran.</p>
+
+              <div class="packshot-options">
+                <div class="packshot-option">
+                  <div class="option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/></svg></div>
+                  <span>Kemasan Non-Ziplock</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="packshot-features">
+              <div class="packshot-feature">
+                <i class="fa-regular fa-gem"></i>
+                <div><strong>Premium</strong><small>Tampilan lebih menarik</small></div>
+              </div>
+              <div class="packshot-feature">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div><strong>Aman &amp; Kuat</strong><small>Melindungi produk lebih optimal</small></div>
+              </div>
+              <div class="packshot-feature">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <div><strong>Cocok untuk</strong><small>Retail &amp; marketplace</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAKET PRODUK -->
+    <section class="section product-section" id="produk">
+      <div class="container">
+        <h2 class="heading reveal">PAKET PRODUK<br><span class="red">MAKLON</span></h2>
+        <div class="product-meta reveal">
+          <span>Include isian + bumbu</span>
+          <span>Minimal Order : 100Pcs/Varian <i style="font-weight:500">(MOQ dapat berbeda untuk produk
+              tertentu)</i></span>
+        </div>
+
+        <!-- Ready to Eat -->
+        <div class="product-group" id="ready-eat">
+          <h3>Ready to Eat</h3>
+          <div class="food-list">
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">1</span>
+                <h4>Keripik Singkong</h4>
+                <p>Gramasi : 60Gr<br>Ketahanan : 6 bulan di suhu ruang<br><em>Singkong, Cabai, Garam, Minyak</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0015_KERIPIK SINGKONG.webp"
+                  alt="Keripik singkong" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">2</span>
+                <h4>Basreng Stik</h4>
+                <p>Gramasi : 700Gr<br>Ketahanan : 6 bulan di suhu ruang<br><em>Ikan, Cabai, Penyedap Rasa,
+                    Minyak</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0010_BASO ACI PEDAS.webp"
+                  alt="Basreng stik" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">3</span>
+                <h4>Basreng Bulat</h4>
+                <p>Gramasi : 70Gr<br>Ketahanan : 6 bulan di suhu ruang<br><em>Ikan, Cabai, Penyedap Rasa,
+                    Minyak</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0013_BASBUL BARU copy.webp"
+                  alt="Basreng bulat" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">4</span>
+                <h4>Keripik Usus</h4>
+                <p>Gramasi : 60Gr<br>Ketahanan : 4 bulan di suhu ruang<br><em>Usus, Cabai, Penyedap Rasa,
+                    Minyak</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0012_USUS BARU.webp" alt="Keripik usus"
+                  loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">5</span>
+                <h4>Keripik Pisang Cokelat</h4>
+                <p>Gramasi : 60Gr<br>Ketahanan : 6 bulan di suhu ruang<br><em>Pisang, Mentega, Gula, Cokelat Bubuk,
+                    Minyak</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0011_PISCOK.webp"
+                  alt="Keripik pisang cokelat" loading="lazy"></div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Ready to Cook -->
+        <div class="product-group" id="ready-cook">
+          <h3>Ready to Cook</h3>
+          <div class="food-list">
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">1</span>
+                <h4>Baso Aci Kuah Pedas</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Baso Aci, Mie, Minyak Sambal,
+                    Cuankie Lidah, Cuankie Tahu</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0010_BASO ACI PEDAS.webp"
+                  alt="Baso aci kuah pedas" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">2</span>
+                <h4>Topokki</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Tteok, Saus Gochujang, Biji Wijen,
+                    Bubuk Aida Pedas</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0009_TOPOKKI-BARU.webp" alt="Topokki"
+                  loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">3</span>
+                <h4>Rabokki</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Tteok, Mie, Biji Wijen, &amp; Bubuk
+                    Aida Pedas</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0008_RABOKKI-BARU.webp" alt="Rabokki"
+                  loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">4</span>
+                <h4>Cuankie Bandung</h4>
+                <p>Ketahanan : 7 bulan di suhu ruang<br><em>Cuankie Lidah, Siomay, Cuankie Tahu, Tahu Dadu, Powder Asin,
+                    Bubuk Cabai</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0007_CUANKIE BANDUNG.webp"
+                  alt="Cuankie Bandung" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">5</span>
+                <h4>Cuankie Burahay</h4>
+                <p>Ketahanan : 7 bulan di suhu ruang<br><em>Cuankie Lidah, Siomay Segitiga, Powder Asin, Bubuk
+                    Cabai</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0006_BURAHAYY.webp" alt="Cuankie Burahay"
+                  loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">6</span>
+                <h4>Seblak</h4>
+                <p>Ketahanan : 3 bulan di suhu ruang<br><em>Kerupuk Seblak, Makaroni, Siomay Kering, Batagor Mini, Mie
+                    &amp; Batagor Lidah</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0005_SEBLAK.webp" alt="Seblak"
+                  loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">7</span>
+                <h4>Cireng Rujak</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Tepung Tapioka, Daun Bawang, Bawang
+                    Putih, Penyedap Rasa, Saus Rujak</em></p>
+              </div>
+              <div class="food-photo"><img
+                  src="PAKET-PRODUK/PAKET PRODUK_0004_ChatGPT Image May 16_ 2026_ 09_32_07 AM-Photoroom.webp"
+                  alt="Cireng rujak" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">8</span>
+                <h4>Cireng Chili Oil</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Tepung Tapioka, Chili Oil, Bawang
+                    Putih, Penyedap Rasa, Cabai</em></p>
+              </div>
+              <div class="food-photo"><img
+                  src="PAKET-PRODUK/PAKET PRODUK_0001_ChatGPT Image May 16_ 2026_ 09_43_47 AM-Photoroom.webp"
+                  alt="Cireng chili oil" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">9</span>
+                <h4>Baso Aci Ijo</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Baso Aci, Mie, Minyak Sambal Ijo,
+                    Cuankie Lidah, Cuankie Tahu</em></p>
+              </div>
+              <div class="food-photo"><img src="PAKET-PRODUK/PAKET PRODUK_0000_Layer 537.webp" alt="Baso aci ijo"
+                  loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">10</span>
+                <h4>Baso Aci Keju</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Baso Aci, Mie, Cuankie Lidah, Cuankie
+                    Tahu, Siomay, Bumbu Keju</em></p>
+              </div>
+              <div class="food-photo"><img
+                  src="PAKET-PRODUK/PAKET PRODUK_0003_ChatGPT Image Jun 17_ 2026_ 08_53_12 AM_1_.webp"
+                  alt="Baso aci keju" loading="lazy"></div>
+            </article>
+            <article class="food-card reveal">
+              <div class="food-info"><span class="food-no">11</span>
+                <h4>Baso Aci Rendang</h4>
+                <p>Ketahanan : 1 bulan suhu ruang &amp; 3 bulan suhu kulkas<br><em>Baso Aci, Mie, Minyak Rendang, Cuankie
+                    Lidah, Cuankie Tahu</em></p>
+              </div>
+              <div class="food-photo"><img
+                  src="PAKET-PRODUK/PAKET PRODUK_0002_ChatGPT Image Jun 17_ 2026_ 04_24_25 PM-Photoroom.webp"
+                  alt="Baso aci rendang" loading="lazy"></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUK BAHAN BAKU -->
+    <section class="section" id="bahan-baku" style="background:#fafafa">
+      <div class="container">
+        <h2 class="heading reveal">PRODUK<br><span class="red">BAHAN BAKU</span></h2>
+        <div class="reveal">
+          <h3 class="gallery-label">Keringan</h3>
+          <div class="raw-gallery">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0007_IMG_0326.webp" alt="Bahan baku kering 1" loading="lazy">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0006_IMG_0331.webp" alt="Bahan baku kering 2" loading="lazy">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0005_IMG_0333.webp" alt="Bahan baku kering 3" loading="lazy">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0004_IMG_0321.webp" alt="Bahan baku kering 4" loading="lazy">
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="gallery-label">Basahan</h3>
+          <div class="raw-gallery">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0003_IMG_0851.JPG.webp" alt="Bahan baku basah 1" loading="lazy">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0002_IMG_0237.webp" alt="Bahan baku basah 2" loading="lazy">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0001_IMG_0838.webp" alt="Bahan baku basah 3" loading="lazy">
+            <img src="PRODUK-BAHAN-BAKU/Untitled-1_0000_IMG_0233.webp" alt="Bahan baku basah 4" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOKUMENTASI -->
+    <section class="section" id="dokumentasi">
+      <div class="container">
+        <div class="reveal">
+          <div class="pill-title">◎ DOKUMENTASI</div>
+          <h2 class="heading">FOTO <span class="red">PRODUK</span></h2>
+          <p class="section-copy">Visual produk berkualitas tinggi untuk mendukung branding dan penjualan Anda.</p>
+        </div>
+
+        <div class="photo-grid reveal">
+          <img src="FOTO-PRODUK/Untitled-1_0008_DSC06900-Enhanced-NR.webp" alt="Produk makanan SBU 1" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0007_DSC06198-Enhanced-NR.webp" alt="Produk makanan SBU 2" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0006_DSC06233-Enhanced-NR.webp" alt="Produk makanan SBU 3" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0005_DSC06293-Enhanced-NR.webp" alt="Produk makanan SBU 4" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0004_DSC06913-Enhanced-NR.webp" alt="Produk makanan SBU 5" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0003_DSC03584.webp" alt="Produk makanan SBU 6" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0002_DSC00758.webp" alt="Produk makanan SBU 7" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0001_DSC06257.webp" alt="Produk makanan SBU 8" loading="lazy">
+          <img src="FOTO-PRODUK/Untitled-1_0000_DSC03547.webp" alt="Produk makanan SBU 9" loading="lazy">
+        </div>
+
+        <div class="reveal">
+          <h2 class="heading" style="margin-top:85px">FOTO <span class="red">PRODUKSI</span></h2>
+        </div>
+        <div class="photo-grid reveal">
+          <img src="FOTO-PRODUKSI/Untitled-1_0008_DSC07805-Enhanced-NR.webp" alt="Dokumentasi produksi 1" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0000_DSC07844-Enhanced-NR.webp" alt="Dokumentasi produksi 2" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0007_DSC08128-Enhanced-NR.webp" alt="Dokumentasi produksi 3" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0006_IMG_6064 copy.webp" alt="Dokumentasi produksi 4" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0005_IMG_6060 copy.webp" alt="Dokumentasi produksi 5" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0004_IMG_0647 copy.webp" alt="Dokumentasi produksi 6" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0003_IMG_6063 copy.webp" alt="Dokumentasi produksi 7" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0002_IMG_6065 copy.webp" alt="Dokumentasi produksi 8" loading="lazy">
+          <img src="FOTO-PRODUKSI/Untitled-1_0001_DSC07168 copy.webp" alt="Dokumentasi produksi 9" loading="lazy">
+        </div>
+
+        <!--
+          CATATAN: gambar "FOTO EXPORT" di bawah memakai placeholder path.
+          Ganti setiap src dengan file asli Anda, atau tempel kembali
+          tag <img> base64 lama Anda pada posisi yang sesuai.
+        -->
+        <div class="reveal">
+          <h2 class="heading" style="margin-top:85px">FOTO <span class="red">EXPORT</span></h2>
+        </div>
+        <div class="photo-grid reveal">
+          <img src="FOTO-EXPORT/Untitled-1_0008_IMG_0364_HD_2x.webp" alt="Dokumentasi export 1" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0007_IMG_0370_HD_2x.webp" alt="Dokumentasi export 2" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0006_IMG_0371_HD_2x.webp" alt="Dokumentasi export 3" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0005_IMG_0368_HD_2x.webp" alt="Dokumentasi export 4" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0004_Gambar WhatsApp 2024-11-29 pukul 09.26.13_b739ceae copy.webp" alt="Dokumentasi export 5" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0003_IMG_0638 copy.webp" alt="Dokumentasi export 6" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0002_IMG_6240 copy.webp" alt="Dokumentasi export 7" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0001_IMG_0367.webp" alt="Dokumentasi export 8" loading="lazy">
+          <img src="FOTO-EXPORT/Untitled-1_0000_WhatsApp Image 2024-12-03 at 18.55.36 copy.webp" alt="Dokumentasi export 9" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- KLIEN & TESTIMONI -->
+    <section class="section" id="klien" style="background:#fafafa">
+      <div class="container">
+        <div class="client-area">
+          <div class="reveal">
+            <h2 class="heading">OUR AWESOME<br><span class="red">CLIENT</span></h2>
+            <p class="section-copy">Brand-brand yang telah mempercayai Sahabat Bangun Usaha untuk mengubah ide menjadi
+              produk yang memiliki identitas, kualitas, dan potensi pasar.</p>
+            <div class="client-card">
+              <div class="client-viewport" id="clientViewport">
+                <div class="client-track" id="clientTrack">
+                  <div class="client-slide">
+                    <img src="images/Rasa-Nusantara.webp" alt="Logo Rasa Nusantara" loading="lazy" draggable="false">
+                  </div>
+                  <div class="client-slide">
+                    <img src="images/Mahkota-Taiwan.webp" alt="Logo Mahkota Taiwan" loading="lazy" draggable="false">
+                  <!-- </div>
+                  <div class="client-slide">
+                    <img src="images/Cuanki-Burahay.png" alt="Logo Cuanki Burahay" loading="lazy" draggable="false">
+                  </div>
+                  <div class="client-slide">
+                    <img src="images/Basbul.png" alt="Logo Basbul" loading="lazy" draggable="false"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-controls">
+              <button type="button" class="client-nav-btn" id="clientPrev" aria-label="Klien sebelumnya">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <span class="client-line" aria-hidden="true"></span>
+              <button type="button" class="client-nav-btn" id="clientNext" aria-label="Klien berikutnya">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </div>
+            <p class="client-note">SWIPE · DRAG · EXPLORE</p>
+          </div>
+
+          <div class="reveal">
+            <h2 class="heading">KATA <span class="red">MEREKA</span></h2>
+            <div class="testimonial-slider">
+              <button type="button" class="client-nav-btn" id="testimonialPrev" aria-label="Testimoni sebelumnya">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <div class="testimonial">
+                <div class="testimonial-viewport" id="testimonialViewport">
+                  <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-slide">
+                      <img src="images/Mahkota-Taiwan.webp" alt="Logo Mahkota Taiwan" loading="lazy" draggable="false">
+                      <div>
+                        <h3>MAHKOTA TAIWAN <span class="stars">★★★★★</span></h3>
+                        <p>Terima kasih SBU sudah hadir membantu kami untuk mengekspor jajanan Indonesia ke Taiwan. Untuk
+                          ketahanan produk dan rasa kami sangat puas sekali dengan SBU. Dan soal harga sangat ramah bagi
+                          pelaku UMKM seperti kita.</p>
+                      </div>
+                    </div>
+                    <div class="testimonial-slide">
+                      <img src="images/Rasa-Nusantara.webp" alt="Logo Rasa Nusantara" loading="lazy" draggable="false">
+                      <div>
+                        <h3>RASA NUSANTARA <span class="stars">★★★★★</span></h3>
+                        <p>Pelayanan maklon SBU sangat profesional dari pengembangan resep hingga kemasan siap jual.
+                          Kualitas produk konsisten dan timnya sangat responsif membantu kebutuhan brand kami.</p>
+                      </div>
+                    <!-- </div>
+                    <div class="testimonial-slide">
+                      <img src="images/Cuanki-Burahay.png" alt="Logo Cuanki Burahay" loading="lazy" draggable="false">
+                      <div>
+                        <h3>CUANKI BURAHAY <span class="stars">★★★</span></h3>
+                        <p>Proses produksi cepat, higienis, dan legalitas produk dibantu sampai tuntas. Penjualan kami
+                          meningkat pesat sejak bekerja sama dengan Sahabat Bangun Usaha.</p>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="client-nav-btn" id="testimonialNext" aria-label="Testimoni berikutnya">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section-sm" id="kontak">
+      <div class="container">
+        <div class="contact-wrap reveal">
+          <div class="contact-title">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Connect With Us</h2>
+          </div>
+          <div class="contact-details">
+            <div>
+              <span class="contact-label">OFFICE ADDRESS</span>
+              <a class="contact-row"
+                href="https://www.google.com/maps/place/Nangkring+Seblak+(Cimahi)/@-6.8773095,107.5577419,17z/data=!4m6!3m5!1s0x2e68e5da5903d18d:0x9833da1cb01a7fef!8m2!3d-6.8769792!4d107.5595713!16s%2Fg%2F11sc_nq92j?entry=ttu&g_ep=EgoyMDI2MTEyMi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" rel="noopener">
+                <span class="c-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg></span>
+                <span class="c-text">Jln. Pesantren No.137, Cibabat,<br>Kec. Cimahi Utara,<br>Kota Cimahi,<br>Jawa Barat
+                  40513</span>
+                <span class="c-ext" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg></span>
+              </a>
+            </div>
+
+            <div>
+              <span class="contact-label">CONTACT</span>
+              <a class="contact-row" href="https://instagram.com/sahabatbangunusaha" target="_blank" rel="noopener">
+                <span class="c-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg></span>
+                <span class="c-text">sahabatbangunusaha</span>
+                <span class="c-ext" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg></span>
+              </a>
+              <a class="contact-row" style="margin-top:8px" href="https://www.tiktok.com/@sahabatbangunusaha"
+                target="_blank" rel="noopener">
+                <span class="c-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+                    <path
+                      d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                  </svg></span>
+                <span class="c-text">sahabatbangunusaha</span>
+                <span class="c-ext" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg></span>
+              </a>
+              <a class="contact-row" style="margin-top:8px" href="https://wa.me/6285780158015" target="_blank"
+                rel="noopener">
+                <span class="c-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  </svg></span>
+                <span class="c-text">0857-8015-8015</span>
+                <span class="c-ext" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg></span>
+              </a>
+            </div>
+
+            <div class="contact-footer">Mulai perjalanan produk Anda bersama mitra maklon profesional.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--
+  <footer>
+    <div class="container footer-row">
+      <div><b>SAHABAT BANGUN USAHA</b><br>Kualitas Terbaik Untuk Usaha Anda</div>
+      <div class="footer-links"><a href="#beranda">Beranda</a><a href="#layanan">Layanan</a><a
+          href="#produk">Produk</a><a href="#kontak">Hubungi Kami</a></div>
+      <div>© <span id="year"></span> SBU. All rights reserved.</div>
+    </div>
+  </footer>
+  -->
+
+  <div class="lightbox" id="lightbox" aria-label="Tampilan gambar" role="dialog" aria-modal="true">
+    <button id="lightboxClose" aria-label="Tutup">×</button>
+    <img id="lightboxImage" alt="Tampilan dokumentasi">
+  </div>
+
+  <script>
+    // Menu mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '×' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    }));
+
+    // Animasi reveal saat scroll
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const closeLightbox = () => lightbox.classList.remove('open');
+    document.querySelectorAll('.photo-grid img, .raw-gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightbox.classList.add('open');
+      });
+    });
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Slider (infinite, drag & swipe)
+    const initSlider = (viewportId, trackId, prevId, nextId) => {
+      const viewport = document.getElementById(viewportId);
+      const track = document.getElementById(trackId);
+      const prevBtn = document.getElementById(prevId);
+      const nextBtn = document.getElementById(nextId);
+      if (!viewport || !track) return;
+
+      const originalSlides = Array.from(track.children);
+      const totalSlides = originalSlides.length;
+      if (totalSlides <= 1) return;
+
+      const firstClone = originalSlides[0].cloneNode(true);
+      const lastClone = originalSlides[totalSlides - 1].cloneNode(true);
+      firstClone.setAttribute('aria-hidden', 'true');
+      lastClone.setAttribute('aria-hidden', 'true');
+      track.appendChild(firstClone);
+      track.insertBefore(lastClone, originalSlides[0]);
+
+      let index = 1;
+      let startX = 0;
+      let deltaX = 0;
+      let isDragging = false;
+
+      const setPosition = animate => {
+        track.style.transition = animate ? 'transform .36s cubic-bezier(.22, .61, .36, 1)' : 'none';
+        track.style.transform = `translateX(-${index * 100}%)`;
+      };
+
+      const snapIfClone = () => {
+        if (index === 0) {
+          index = totalSlides;
+          setPosition(false);
+          return true;
+        }
+        if (index === totalSlides + 1) {
+          index = 1;
+          setPosition(false);
+          return true;
+        }
+        return false;
+      };
+
+      setPosition(false);
+
+      const goTo = idx => {
+        if (snapIfClone()) void track.offsetWidth;
+        index = Math.max(0, Math.min(totalSlides + 1, idx));
+        setPosition(true);
+      };
+
+      track.addEventListener('transitionend', e => {
+        if (e.target === track) snapIfClone();
+      });
+
+      prevBtn?.addEventListener('click', () => goTo(index - 1));
+      nextBtn?.addEventListener('click', () => goTo(index + 1));
+
+      viewport.addEventListener('pointerdown', e => {
+        if (e.button !== 0 && e.pointerType === 'mouse') return;
+        snapIfClone();
+        isDragging = true;
+        startX = e.clientX;
+        deltaX = 0;
+        track.style.transition = 'none';
+        viewport.classList.add('dragging');
+        viewport.setPointerCapture(e.pointerId);
+      });
+
+      viewport.addEventListener('pointermove', e => {
+        if (!isDragging) return;
+        deltaX = e.clientX - startX;
+        const offsetPct = (deltaX / viewport.clientWidth) * 100;
+        track.style.transform = `translateX(calc(-${index * 100}% + ${offsetPct}%))`;
+      });
+
+      const endDrag = () => {
+        if (!isDragging) return;
+        isDragging = false;
+        viewport.classList.remove('dragging');
+        const threshold = Math.min(60, viewport.clientWidth * 0.15);
+        if (deltaX < -threshold) goTo(index + 1);
+        else if (deltaX > threshold) goTo(index - 1);
+        else goTo(index);
+      };
+
+      viewport.addEventListener('pointerup', endDrag);
+      viewport.addEventListener('pointercancel', endDrag);
+    };
+
+    initSlider('clientViewport', 'clientTrack', 'clientPrev', 'clientNext');
+    initSlider('testimonialViewport', 'testimonialTrack', 'testimonialPrev', 'testimonialNext');
+  </script>
+</body>
+
+</html>
